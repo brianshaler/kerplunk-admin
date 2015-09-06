@@ -2,7 +2,7 @@
   "name": "kerplunk-admin",
   "displayName": "Admin",
   "description": "Core package for handling Kerplunk administration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "kerplunk": {
     "dependencies": [
       "kerplunk-server"
