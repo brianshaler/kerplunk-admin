@@ -17,12 +17,19 @@ module.exports = (System) ->
   setupHandler = Setup System
 
   routes:
-    public:
-      '/admin/login': 'login'
-      '/admin/setup/:step?': 'setup'
     admin:
       '/admin/logout': 'logout'
       '/admin': 'main'
+    public:
+      '/admin/login': 'login'
+      '/admin/setup/:step?': 'setup'
+
+  handlers:
+    setup: setupHandler
+    login: loginHandler
+    logout: logout
+    index: loginHandler
+    main: 'main'
 
   globals:
     public:
@@ -41,13 +48,6 @@ module.exports = (System) ->
       layout: 'public.layout.default'
       plugin: 'kerplunk-admin'
       handler: 'index'
-
-  handlers:
-    setup: setupHandler
-    login: loginHandler
-    logout: logout
-    index: loginHandler
-    main: 'main'
 
   sockets: [
     'admin'
