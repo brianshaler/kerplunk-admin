@@ -15,10 +15,6 @@ glut gulp,
       runner: coffeeAmdify
       src: 'src/components/**/*.coffee'
       dest: 'public/components'
-    client:
-      runner: coffee
-      src: 'src/public/**/*.coffee'
-      dest: 'public'
     assets:
       src: 'assets/**'
       dest: 'public'
