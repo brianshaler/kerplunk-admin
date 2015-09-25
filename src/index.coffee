@@ -33,8 +33,11 @@ module.exports = (System) ->
 
   globals:
     public:
-      styles:
-        'kerplunk-admin/css/admin.css': ['/admin/**', '/admin/']
+      css:
+        'kerplunk-admin:layout': 'kerplunk-admin/css/admin.css'
+        'kerplunk-admin:main': 'kerplunk-admin/css/admin.css'
+        'kerplunk-admin:login': 'kerplunk-admin/css/admin.css'
+        'kerplunk-admin:setup': 'kerplunk-admin/css/admin.css'
       layout:
         default: 'kerplunk-admin:layout'
       nav:
